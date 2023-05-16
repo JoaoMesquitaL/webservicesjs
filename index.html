@@ -28,7 +28,14 @@
 
 <div id="LinhaColunas1" class="row text-center">
 	<div class="col-md-4">
-	</div>
+		<div class="card">
+			  <div class="card-body">
+				<h1>Gerador de Whatsapp Link</h1>
+					<input  type="text" class="form-control" id="wpplink" placeholder="Código + número">
+						<button type="button" class="btn btn-outline-danger" onclick="gwppLink()" id="btnGera"> Gerar Link Whatsapp </button>
+				</div>
+			</div>
+		</div>
 
 
 	<div class="col-md-4">
@@ -36,7 +43,7 @@
 			  <div class="card-body">
 				<h1>Gerador de QR Code</h1>
 					<input  type="text" class="form-control" id="qrcode" placeholder="Cole aqui o link!">
-						<button type="button" class="btn btn-outline-danger" onclick="chegou()" id="btnGera"> Gerar Qr Code </button>
+						<button type="button" class="btn btn-outline-danger" onclick="qrGenerate()" id="btnGera"> Gerar Qr Code </button>
 					<div id="qrCodeContent">
 						<img id="qrcodeimg" src="images/load.png">
 					</div>

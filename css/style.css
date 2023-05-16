@@ -10,8 +10,10 @@
 }
 
 #LinhaColunas1{
-		width: 100%;
+	width: 98%;
 	margin-top: 10px;
+	margin-left: 1%;
+	margin-right: 1%;
 }
 
 #coluna2Menu{

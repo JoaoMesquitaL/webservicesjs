@@ -1,5 +1,5 @@
-function chegou(){
-	const input = document.querySelector("input").value
+function qrGenerate(){
+	const input = document.querySelector("#qrcode").value
 	if(!input){
 		alert("Por favor, preencha o campo para gerar o QrCode!")
 	}else{
@@ -19,4 +19,10 @@ function dlPNGActivate(){
 
 function tstButton(){
 	alert("Chegou!")
+}
+
+function gwppLink(){
+		const wppInput = document.querySelector("#wpplink").value
+		wppLink = 'http://wa.me/' + wppInput
+		console.log("Seu link: ", wppLink )
 }
