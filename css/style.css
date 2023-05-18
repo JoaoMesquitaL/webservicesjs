@@ -37,3 +37,14 @@
 	background-color: red;
 }
 
+#copy-wpp{
+	display: none;
+	margin-top: 5%;
+}
+
+#wppLinkResult{
+	margin-top: 1%;
+	margin-bottom: 3%;
+	text-align: center;
+}
+

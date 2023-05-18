@@ -17,12 +17,23 @@ function dlPNGActivate(){
 	document.getElementById("dl-png").style.display = 'block';
 }
 
-function tstButton(){
-	alert("Chegou!")
+function gwppLink(){
+		const wppInput = document.querySelector("#wpplinkNumero").value
+		if(!wppInput){
+			alert("Por favor, preencha o campo para gerar o QrCode!")
+		}else{
+			wppGenerator(wppInput);
+			dlWpplinkActivate();
+		}
 }
 
-function gwppLink(){
-		const wppInput = document.querySelector("#wpplink").value
-		wppLink = 'http://wa.me/' + wppInput
-		console.log("Seu link: ", wppLink )
+function wppGenerator(wppInput){
+	const result = "https://wa.me/55"+wppInput
+	
+	const inpRes = document.getElementById('wppLinkResult')
+	inpRes.value = result
+}
+
+function dlWpplinkActivate(){
+	document.getElementById("copy-wpp").style.display = 'block';
 }

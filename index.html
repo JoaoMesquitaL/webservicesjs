@@ -29,13 +29,29 @@
 <div id="LinhaColunas1" class="row text-center">
 	<div class="col-md-4">
 		<div class="card">
-			  <div class="card-body">
+			<div class="card-body">
 				<h1>Gerador de Whatsapp Link</h1>
-					<input  type="text" class="form-control" id="wpplink" placeholder="Código + número">
+
+					<form>
+						<input  type="text" class="form-control" id="wpplinkNumero" placeholder="Código de área + número" maxlength="11">
 						<button type="button" class="btn btn-outline-danger" onclick="gwppLink()" id="btnGera"> Gerar Link Whatsapp </button>
+					</form>
+
+				<div id="copy-wpp"> 
+					<div class="alert alert-primary" role="alert">
+						Copie seu link do Whatsapp abaixo!
+					</div>
+					<input type="text" class="form-control" id="wppLinkResult" disabled="" value=" "> 
+
+					<ul class="list-group">
+						<li class="list-group-item ">ATENÇÃO:</li>
+						<li class="list-group-item text-start">No momento essa ferramenta gera apenas links para telefones brasileiros!</li>
+					</ul>
 				</div>
+
 			</div>
 		</div>
+	</div>
 
 
 	<div class="col-md-4">
